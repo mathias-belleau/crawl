@@ -107,8 +107,8 @@ struct dump_params
     bool full_id;
     const scorefile_entry *se;
 
-    dump_params(const string &sec = "", bool id = false,
-                const scorefile_entry *s = nullptr)
+    dump_params(const string &sec = "", bool id = true,
+                const scorefile_entry *s)
         : section(sec), full_id(id), se(s)
     {
         // Start with enough room for 100 80 character lines.
